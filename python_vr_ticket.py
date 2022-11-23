@@ -16,24 +16,21 @@ def extract_barcodes(filename):
 
 
 def process_ticket_image(path_to_file):
-    try:
-        barcodes = extract_barcodes(path_to_file)
-        for code in barcodes:
-            raw = code.get("raw")
-            raw_bytes = bytes(raw, encoding="iso-8859-1")
-            data = SSBData(raw_bytes)
-            print(data.__dict__)
-    except:
-        raise
+    barcodes = extract_barcodes(path_to_file)
+    for code in barcodes:
+        raw = code.get("raw")
+        raw_bytes = bytes(raw, encoding="iso-8859-1")
+        data = SSBData(raw_bytes)
+        print(data.__dict__)
 
 
 def main():
     args = sys.argv[1:]
     if len(args) == 1:
         try:
-            process_ticket_image(args[1])
+            process_ticket_image(args[0])
         except:
-            print(f"Error: File {args[1]} does not exist!")
+            print(f"Error: File {args[0]} does not exist!")
     else:
         print("Usage: python_vr_ticket <path_to_image>")
 
