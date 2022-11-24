@@ -39,4 +39,4 @@ python_vr_ticket reads the input image and looks for barcodes. When a barcode is
 ### Known issues
 
 * Three number seats are unsupported by the specification as such. The specification supports only two numbers and a character. Therefore, for example, seat number 115 is encoded as 151, and seat 229 is encoded as 292.
-* The zxing library which does all the detection and parsing work is not very good in reading Aztec codes. The source image must be very clean and large in size.
+* The zxing library which does all the detection and parsing work behind the scenes is not very good in reading Aztec codes. The source image must be very clean and large in size.
