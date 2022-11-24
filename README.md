@@ -4,7 +4,7 @@ Python kikkare for reading Aztec barcodes on VR's train tickets
 
 ## Background:
 
-Finnish Railways (VR) uses Small Structured Barcodes (SSB) on travel documents. These are 6-layer Aztec 2D barcodes as specified in UIC leaflet 918-2. More can be read from ERA TAP TSI technical document B.6.
+Finnish Railways (VR) uses Small Structured Barcodes (SSB) on travel documents. The SSBs are 6-layer Aztec 2D barcodes as specified in UIC leaflet 918-2. More can be read from ERA TAP TSI technical document B.6.
 
 
 ### Links
