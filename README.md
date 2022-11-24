@@ -2,9 +2,17 @@
 
 Python kikkare for reading Aztec barcodes on VR's train tickets
 
+## Background:
+
+Finnish Railways (VR) uses Small Structured Barcodes (SSB) on travel documents. These are 6-layer Aztec 2D barcodes as specified in UIC leaflet 918-2. More can be read from ERA TAP TSI technical document B.6. 
+
 ## Dependencies:
 
-docbarcodes package is a wrapper for zxing which requires Java 8.
+The script depends on two packages:
+* bitstring
+* docbarcodes
+
+The docbarcodes package is a wrapper for zxing which requires Java 8 environment to be installed.
 
 ## Install:
 
@@ -20,4 +28,4 @@ $ pip install -r requirements.txt
 $ python python_vr_ticket.py <path_to_image>
 ```
 
-python_vr_ticket reads the input image and looks for barcodes. When a barcode is found, structured ticket data is printed out.
+python_vr_ticket reads the input image and looks for barcodes. When a barcode is succesfully found and processed, structured ticket data gets printed out.
