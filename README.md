@@ -35,3 +35,7 @@ $ python python_vr_ticket.py <path_to_image>
 ```
 
 python_vr_ticket reads the input image and looks for barcodes. When a barcode is succesfully found and processed, structured ticket data gets printed out.
+
+### Known issues
+
+The zxing library which does all the detection and parsing work is not very good in reading Aztec codes. The source image must be very clean and large in size.
